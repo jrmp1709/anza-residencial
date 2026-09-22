@@ -663,7 +663,9 @@ button { font-family: inherit; }
   margin-bottom: 16px;
 }
 .price-card h3 { font-family: var(--font-sans); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .8rem; color: var(--stone-text); margin-bottom: 10px; }
-.price-amount { font-size: 2.4rem; margin: 0 0 2px; }
+.price-was { font-size: .95rem; color: var(--stone-text); margin: 0 0 2px; }
+.price-was .num { font-size: 1rem; font-weight: 600; color: var(--stone-text); }
+.price-amount { font-size: 2.6rem; margin: 0 0 2px; }
 .price-note { font-size: .86rem; color: var(--stone-text); margin-bottom: 14px; }
 .price-total {
   font-size: .82rem;
@@ -707,9 +709,38 @@ button { font-family: inherit; }
 .benefit-banner p { color: var(--cream-text-soft); margin-bottom: 6px; max-width: 480px; }
 .benefit-banner .fineprint { margin-top: 4px; }
 .benefit-banner__text { flex: 1; min-width: 240px; }
+.benefit-hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 4px 0 14px;
+}
+.benefit-hero__gratis {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1;
+  color: var(--clay-soft);
+  letter-spacing: -0.01em;
+}
+.benefit-hero__label {
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--cream-text);
+  line-height: 1.25;
+  border-left: 2px solid rgba(237,232,218,.25);
+  padding-left: 16px;
+}
+.benefit-spec {
+  font-size: 1.15rem;
+  color: var(--cream-text);
+  margin-bottom: 10px;
+}
+.benefit-spec .num { font-size: 1.3rem; color: var(--clay-soft); }
 .benefit-banner__img {
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
   flex-shrink: 0;
   opacity: .92;
