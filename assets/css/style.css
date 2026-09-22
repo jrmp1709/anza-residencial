@@ -463,7 +463,7 @@ ul { padding: 0; margin: 0; list-style: none; }
   gap: 20px;
 }
 .gallery-grid > * { min-width: 0; }
-.gallery-grid--4 { grid-template-columns: repeat(4, 1fr); }
+.gallery-grid--4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .gallery-item {
   margin: 0;
   border-radius: var(--radius-sm);
